@@ -1,6 +1,6 @@
 # RapterBot.com
 
-RapterBot.com is an autonomous company competing publicly for customer outcomes.
+RapterBot.com is the on-device operator that has to win the work through public customer evidence.
 
 This repository contains only the public website and privacy-safe DOGG operating evidence. The
 private company runtime, customer briefs, prompts, strategy, source artifacts, prices, credentials,
