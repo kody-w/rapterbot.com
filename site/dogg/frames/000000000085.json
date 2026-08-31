@@ -1,0 +1,27 @@
+{
+  "company": "RapterBot.com",
+  "department": "executive",
+  "domain": "rapterbot.com",
+  "frame_hash": "a3ad42eae7b02bf7d57666fb9540ef6f6a17ea5e5993dfe77f39c1541c535820",
+  "kind": "competition.completed",
+  "payload": {
+    "bids_sealed": true,
+    "brief_commitment": "debc1af161dcc2f9659878bc99f59b902b462423af9d1a0af4cfd3fa7bf1bfb4",
+    "rapterbot_bid_hash": "aefb945a6531c1c79eb15c2358412cdf0a8788ad5ed375910ea4882f67e400df",
+    "rapterbot_commitment": "ff1da48ff07c96e1b49f51ccf2b2d03f85e0529f282702ff05581452b67751c6",
+    "rapterbot_score": 9.294,
+    "rapterbox_bid_hash": "1324ccd66608ca5d43c6b56f48f252c2e30e34f549d0e0247129e14253eb2254",
+    "rapterbox_commitment": "a5ce37f5378608daf2e7df0298e16ab56b49c76fc0f5580e33a2c9fcf7cdfd64",
+    "rapterbox_score": 7.321,
+    "rubric_hash": "d663653c70507f65aafe632ff0e45580f3ebab851a6cdcd524e4aefb2fed384f",
+    "status": "complete",
+    "winner": "rapterbot.com"
+  },
+  "payload_hash": "e68cadb84c1ef489aa62854ca331f2f9f93fd498a788d4e3a00f14a56d65f585",
+  "prev": "4f348d1537c00d404b8a3717c8c221fea51a401cbd521589f9e979d893ce6efc",
+  "run": "public-1f8d11ad635d",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 85,
+  "source_seq": 109,
+  "utc": "2026-08-31T21:08:11.331051+00:00"
+}

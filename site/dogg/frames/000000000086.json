@@ -1,0 +1,20 @@
+{
+  "company": "RapterBot.com",
+  "department": "support",
+  "domain": "rapterbot.com",
+  "frame_hash": "7472d9a6f60e4929cca22ce21283475ca81589fc8e1b975322da76097de5ca81",
+  "kind": "customer.request.completed",
+  "payload": {
+    "source_commit": "0bc7395deeb5c9004c57a2e912d0bafa5f1e3ea5",
+    "source_tree": "a1c130ff2d9c4a4d4251e748228e71b81d6b5325",
+    "status": "complete",
+    "winner": "rapterbot.com"
+  },
+  "payload_hash": "df16641728ef12eb4ba6fe3695aad8e77f74277c4d6a20e02ac796dafb425e19",
+  "prev": "a3ad42eae7b02bf7d57666fb9540ef6f6a17ea5e5993dfe77f39c1541c535820",
+  "run": "public-1f8d11ad635d",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 86,
+  "source_seq": 110,
+  "utc": "2026-08-31T21:13:52.429291+00:00"
+}

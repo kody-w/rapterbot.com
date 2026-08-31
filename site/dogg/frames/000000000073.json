@@ -1,0 +1,18 @@
+{
+  "company": "RapterBot.com",
+  "department": "executive",
+  "domain": "rapterbot.com",
+  "frame_hash": "ea56062febcb4720293051270dde63ced8d793936263b157a76186b2e6ce9d8c",
+  "kind": "request.accepted",
+  "payload": {
+    "revision": false,
+    "status": "accepted"
+  },
+  "payload_hash": "b445ea6f300421892cd411427bfac6054ae324c89d0cb6d5e21ab1cee484bdc7",
+  "prev": "f6fba317f1fa8295eae132d5730b97e6c4da9daa5bf3968c53211bfe287b163c",
+  "run": "public-191becc359d3",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 73,
+  "source_seq": 95,
+  "utc": "2026-08-31T20:54:21.679064+00:00"
+}

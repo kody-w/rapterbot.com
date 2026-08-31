@@ -1,7 +1,7 @@
 {
   "company": "RapterBot.com",
   "domain": "rapterbot.com",
-  "frame_count": 72,
+  "frame_count": 88,
   "frames": [
     {
       "hash": "39ee8538bc7a2b77edd7b6d3a133f874dff01128c9b645b17a2fd272b31cd992",
@@ -506,20 +506,132 @@
       "path": "dogg/frames/000000000071.json",
       "seq": 71,
       "utc": "2026-08-31T20:47:37.417839+00:00"
+    },
+    {
+      "hash": "f6fba317f1fa8295eae132d5730b97e6c4da9daa5bf3968c53211bfe287b163c",
+      "kind": "release.started",
+      "path": "dogg/frames/000000000072.json",
+      "seq": 72,
+      "utc": "2026-08-31T20:54:15.071570+00:00"
+    },
+    {
+      "hash": "ea56062febcb4720293051270dde63ced8d793936263b157a76186b2e6ce9d8c",
+      "kind": "request.accepted",
+      "path": "dogg/frames/000000000073.json",
+      "seq": 73,
+      "utc": "2026-08-31T20:54:21.679064+00:00"
+    },
+    {
+      "hash": "4f255eeb2d876a547f660aade15589dd8368349f8f6f46ce035c21253e51ecbe",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000074.json",
+      "seq": 74,
+      "utc": "2026-08-31T20:54:28.387760+00:00"
+    },
+    {
+      "hash": "8632cb74242fcd0ccbe28022c3463708b8bb2c086ce68862069595cc82b8bcd5",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000075.json",
+      "seq": 75,
+      "utc": "2026-08-31T20:54:28.453790+00:00"
+    },
+    {
+      "hash": "8b29a8276a5c86e26b7a2b6020f9effeaeb6a9addd7476ccf60531bf553e1203",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000076.json",
+      "seq": 76,
+      "utc": "2026-08-31T20:54:28.499353+00:00"
+    },
+    {
+      "hash": "4bd0a04181dfb3949ee3848535952a0c3e4fe70b4c813b48773da9b26a0119f4",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000077.json",
+      "seq": 77,
+      "utc": "2026-08-31T20:54:28.528887+00:00"
+    },
+    {
+      "hash": "6e7c2bdcc43c512cec1ad86e1b462c2ec87a3be3caab793944e41898b5140089",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000078.json",
+      "seq": 78,
+      "utc": "2026-08-31T20:54:28.574327+00:00"
+    },
+    {
+      "hash": "b7b834d8892491e95e6bb5ffb340420a708112bc70796e34f7ab2a6291848b55",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000079.json",
+      "seq": 79,
+      "utc": "2026-08-31T20:54:28.624528+00:00"
+    },
+    {
+      "hash": "cc1899d554ab9ca49739da2722acb019cc869bd4b77c45c99990a19c9dcabdf5",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000080.json",
+      "seq": 80,
+      "utc": "2026-08-31T20:54:28.713637+00:00"
+    },
+    {
+      "hash": "aa06c54902db2b70cd4582ac00758b119b8acc8291f6684ddf69b91963687f0b",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000081.json",
+      "seq": 81,
+      "utc": "2026-08-31T20:54:28.887922+00:00"
+    },
+    {
+      "hash": "1046673d4a8ea71864ba6c806b72ce69ae2c573f3e6e3fa131890fd007d90d22",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000082.json",
+      "seq": 82,
+      "utc": "2026-08-31T20:54:28.953260+00:00"
+    },
+    {
+      "hash": "719928970697994dc39310f2abfa47c837d1fdad6a261f94a098f36d615c10a7",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000083.json",
+      "seq": 83,
+      "utc": "2026-08-31T20:54:29.016264+00:00"
+    },
+    {
+      "hash": "4f348d1537c00d404b8a3717c8c221fea51a401cbd521589f9e979d893ce6efc",
+      "kind": "proposal.sealed",
+      "path": "dogg/frames/000000000084.json",
+      "seq": 84,
+      "utc": "2026-08-31T20:54:30.378852+00:00"
+    },
+    {
+      "hash": "a3ad42eae7b02bf7d57666fb9540ef6f6a17ea5e5993dfe77f39c1541c535820",
+      "kind": "competition.completed",
+      "path": "dogg/frames/000000000085.json",
+      "seq": 85,
+      "utc": "2026-08-31T21:08:11.331051+00:00"
+    },
+    {
+      "hash": "7472d9a6f60e4929cca22ce21283475ca81589fc8e1b975322da76097de5ca81",
+      "kind": "customer.request.completed",
+      "path": "dogg/frames/000000000086.json",
+      "seq": 86,
+      "utc": "2026-08-31T21:13:52.429291+00:00"
+    },
+    {
+      "hash": "a34b6a5c15c84719dbd14101bb6adec7dc5617132feef4b9e54b7f7ae575bda0",
+      "kind": "release.started",
+      "path": "dogg/frames/000000000087.json",
+      "seq": 87,
+      "utc": "2026-08-31T22:02:56.305981+00:00"
     }
   ],
-  "head": "cd2d61180f579ece648500e558f32fc82cc06ecb910ff62e41a4d6ccccd7db2f",
-  "latest": "dogg/frames/000000000071.json",
+  "head": "a34b6a5c15c84719dbd14101bb6adec7dc5617132feef4b9e54b7f7ae575bda0",
+  "latest": "dogg/frames/000000000087.json",
   "privacy": {
     "allowlist_only": true,
     "customer_content_exported": false,
     "private_ip_exported": false
   },
-  "private_checkpoint": "1040f7f82f0979f5c5c8ee80cf9cbb7d8ad48f29e42b5fb320b82f50f0bbcc0b",
+  "private_checkpoint": "f7043972581157b2ed0ad718448eaf61afcb3e0eb8414a6ff6a147125e2c21c3",
   "rubric_hash": "4ea2e3360dc5dc1efff997dfc606e647af0b64bc3662ff166dbfa76b1c8c7016",
   "schema": "rapterbot-public-dogg-manifest/1",
-  "updated_at": "2026-08-31T20:47:37.417839+00:00",
-  "window_end": 71,
+  "updated_at": "2026-08-31T22:02:56.305981+00:00",
+  "window_end": 87,
   "window_prev": "0000000000000000000000000000000000000000000000000000000000000000",
   "window_start": 0
 }
