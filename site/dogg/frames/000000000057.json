@@ -1,0 +1,20 @@
+{
+  "company": "RapterBot.com",
+  "department": "finance",
+  "domain": "rapterbot.com",
+  "frame_hash": "b5d4679e3a1f6953f5de072ce5373cab26b031575c0c2545de0fdfdf8c651394",
+  "kind": "department.completed",
+  "payload": {
+    "decision_count": 4,
+    "deliverable_count": 4,
+    "risk_count": 2,
+    "status": "complete"
+  },
+  "payload_hash": "10ee51dab41f266a16ef3d3cdf1483c8a38a972543264e9b98e24ad344e143d9",
+  "prev": "357155023b507cf6d636d0ac586442f06c614d7202234bca55447e6e250a3f9f",
+  "run": "public-c2f0ac926225",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 57,
+  "source_seq": 69,
+  "utc": "2026-08-31T20:04:52.635391+00:00"
+}

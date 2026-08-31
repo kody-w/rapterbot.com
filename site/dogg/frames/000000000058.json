@@ -1,0 +1,20 @@
+{
+  "company": "RapterBot.com",
+  "department": "product",
+  "domain": "rapterbot.com",
+  "frame_hash": "c5a9fb5654ba9de714dacd4c764086d24df657f8843ec8f3550b5c2bac5d442a",
+  "kind": "department.completed",
+  "payload": {
+    "decision_count": 4,
+    "deliverable_count": 12,
+    "risk_count": 3,
+    "status": "complete"
+  },
+  "payload_hash": "bce33d255e416567b8cf93ffbbc1f011cfecfe55bc514f9dcde1f5a9d1b02f7e",
+  "prev": "b5d4679e3a1f6953f5de072ce5373cab26b031575c0c2545de0fdfdf8c651394",
+  "run": "public-c2f0ac926225",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 58,
+  "source_seq": 70,
+  "utc": "2026-08-31T20:04:52.639725+00:00"
+}

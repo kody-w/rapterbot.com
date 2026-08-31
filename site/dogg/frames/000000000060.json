@@ -1,0 +1,20 @@
+{
+  "company": "RapterBot.com",
+  "department": "engineering",
+  "domain": "rapterbot.com",
+  "frame_hash": "91157cc65d03a81d5a7256141d907e25d54cf1749f4934c8e4a0bfa3d3eafb90",
+  "kind": "department.completed",
+  "payload": {
+    "decision_count": 4,
+    "deliverable_count": 6,
+    "risk_count": 2,
+    "status": "complete"
+  },
+  "payload_hash": "a536aa45afcd9e6bf405f35eb61606dae3f3c6cc22c2923b9c2bc46ff2a0941a",
+  "prev": "473b9ab59018202ab94315657300d45602ff28620e64c3416e79628b8323ead4",
+  "run": "public-c2f0ac926225",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 60,
+  "source_seq": 72,
+  "utc": "2026-08-31T20:04:52.647274+00:00"
+}

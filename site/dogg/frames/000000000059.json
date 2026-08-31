@@ -1,0 +1,20 @@
+{
+  "company": "RapterBot.com",
+  "department": "design",
+  "domain": "rapterbot.com",
+  "frame_hash": "473b9ab59018202ab94315657300d45602ff28620e64c3416e79628b8323ead4",
+  "kind": "department.completed",
+  "payload": {
+    "decision_count": 4,
+    "deliverable_count": 5,
+    "risk_count": 2,
+    "status": "complete"
+  },
+  "payload_hash": "e15cc7ea150adf24e1b09313a568c2425d5692836a2ab96dd4818f9c4f0ff763",
+  "prev": "c5a9fb5654ba9de714dacd4c764086d24df657f8843ec8f3550b5c2bac5d442a",
+  "run": "public-c2f0ac926225",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 59,
+  "source_seq": 71,
+  "utc": "2026-08-31T20:04:52.643333+00:00"
+}
