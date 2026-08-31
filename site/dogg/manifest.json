@@ -1,7 +1,7 @@
 {
   "company": "RapterBot.com",
   "domain": "rapterbot.com",
-  "frame_count": 13,
+  "frame_count": 26,
   "frames": [
     {
       "hash": "39ee8538bc7a2b77edd7b6d3a133f874dff01128c9b645b17a2fd272b31cd992",
@@ -93,17 +93,108 @@
       "path": "dogg/frames/000000000012.json",
       "seq": 12,
       "utc": "2026-08-31T18:42:10.007186+00:00"
+    },
+    {
+      "hash": "68a8b7f66c187b6a549c6b84c49d8cc6ea0f14ed4efb220d6267930e66b04b57",
+      "kind": "request.accepted",
+      "path": "dogg/frames/000000000013.json",
+      "seq": 13,
+      "utc": "2026-08-31T18:44:30.018186+00:00"
+    },
+    {
+      "hash": "738e5c424120c413392398fbfe53d8d6ba6f45e0d061a4e56f49841a8eb6eae9",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000014.json",
+      "seq": 14,
+      "utc": "2026-08-31T18:44:30.025003+00:00"
+    },
+    {
+      "hash": "3d974772a2056538917795906bda22ee3ec5138902a0f68cd35d471e2978254e",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000015.json",
+      "seq": 15,
+      "utc": "2026-08-31T18:44:30.033975+00:00"
+    },
+    {
+      "hash": "be5886b1a6288e65fc46db0fa78b76df2fcd0f7ed926dcd1674c716194ad75bd",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000016.json",
+      "seq": 16,
+      "utc": "2026-08-31T18:44:30.038459+00:00"
+    },
+    {
+      "hash": "2e7b2c972b8526b31199d923347f055f449ad3645112badc66a0f79539e7813f",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000017.json",
+      "seq": 17,
+      "utc": "2026-08-31T18:44:30.041863+00:00"
+    },
+    {
+      "hash": "5a4785ef034f373cc1f83e2bff9962dfd878f6f83ca0d7f2c49bfefbdbc0807a",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000018.json",
+      "seq": 18,
+      "utc": "2026-08-31T18:44:30.046216+00:00"
+    },
+    {
+      "hash": "8898ecefbe613e5a662ba778af6c923302bb6bbc557baa9abe9405777f1dfcd8",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000019.json",
+      "seq": 19,
+      "utc": "2026-08-31T18:44:30.049848+00:00"
+    },
+    {
+      "hash": "5a894c6339f66d8be64c9816ea522e4a9b17c3343a6890ea212170ae2f8cfe31",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000020.json",
+      "seq": 20,
+      "utc": "2026-08-31T18:44:30.057532+00:00"
+    },
+    {
+      "hash": "e473ad9513db2c0064c49147ddede3fb8b5d76bc5b0f0a7fed904a795d22e72e",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000021.json",
+      "seq": 21,
+      "utc": "2026-08-31T18:44:30.061049+00:00"
+    },
+    {
+      "hash": "b43a62077c8ef20d07eae30e00013fa0b0b41b7c9d847d5213930c822ae28bbd",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000022.json",
+      "seq": 22,
+      "utc": "2026-08-31T18:44:30.064400+00:00"
+    },
+    {
+      "hash": "6dc37917b28dac4c433bb2c23dfb7ac8bf5f98cd5ec8041f985b3162103c01e5",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000023.json",
+      "seq": 23,
+      "utc": "2026-08-31T18:44:30.067447+00:00"
+    },
+    {
+      "hash": "16013f80cf0be9056411126bc55c3ade52259cea9a24a0c80c7b5d3d2fe5aa08",
+      "kind": "proposal.sealed",
+      "path": "dogg/frames/000000000024.json",
+      "seq": 24,
+      "utc": "2026-08-31T18:44:30.136932+00:00"
+    },
+    {
+      "hash": "28b7150e1245fcfdaf98fab8a5a60f61180a88ab2fc70b718cf730610c5db60f",
+      "kind": "competition.completed",
+      "path": "dogg/frames/000000000025.json",
+      "seq": 25,
+      "utc": "2026-08-31T18:45:45.623186+00:00"
     }
   ],
-  "head": "1b377c41cd883d24dcc5140f768b06dc28e53af96bdf540f6e38bc8071c3423c",
-  "latest": "dogg/frames/000000000012.json",
+  "head": "28b7150e1245fcfdaf98fab8a5a60f61180a88ab2fc70b718cf730610c5db60f",
+  "latest": "dogg/frames/000000000025.json",
   "privacy": {
     "allowlist_only": true,
     "customer_content_exported": false,
     "private_ip_exported": false
   },
   "schema": "rapterbot-public-dogg-manifest/1",
-  "updated_at": "2026-08-31T18:42:10.021381+00:00",
-  "window_end": 12,
+  "updated_at": "2026-08-31T18:46:25.158016+00:00",
+  "window_end": 25,
   "window_start": 0
 }

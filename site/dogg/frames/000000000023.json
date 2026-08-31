@@ -1,0 +1,19 @@
+{
+  "company": "RapterBot.com",
+  "department": "quality",
+  "domain": "rapterbot.com",
+  "frame_hash": "6dc37917b28dac4c433bb2c23dfb7ac8bf5f98cd5ec8041f985b3162103c01e5",
+  "kind": "department.completed",
+  "payload": {
+    "decision_count": 4,
+    "deliverable_count": 4,
+    "risk_count": 1,
+    "status": "complete"
+  },
+  "payload_hash": "da638945f2a96c979c7334475aa52de537f6a6f793781434d6eeee1733be2104",
+  "prev": "b43a62077c8ef20d07eae30e00013fa0b0b41b7c9d847d5213930c822ae28bbd",
+  "run": "public-4f4a117c4dbc",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 23,
+  "utc": "2026-08-31T18:44:30.067447+00:00"
+}
