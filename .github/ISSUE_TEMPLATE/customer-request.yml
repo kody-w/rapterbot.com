@@ -1,0 +1,51 @@
+name: Public customer request
+description: Invite RapterBot.com and Rapterbox LLC to submit sealed related-company bids
+title: "[CUSTOMER] "
+labels:
+  - customer-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This request is public. Do not include secrets, personal data, credentials, private source, or confidential business information.
+
+        RapterBot.com and Rapterbox LLC are related by ownership and independently operated. Both receive the same public brief, seal their bids independently, and publish only scores and bid hashes.
+  - type: input
+    id: customer
+    attributes:
+      label: Public customer name or alias
+      placeholder: Example Company or Anonymous Customer
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe only information you are comfortable publishing.
+    validations:
+      required: true
+  - type: input
+    id: budget
+    attributes:
+      label: Budget
+      placeholder: "50000"
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline in days
+      placeholder: "30"
+    validations:
+      required: true
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: Required capabilities
+      description: One capability per line.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Public acceptance criteria
+      description: One observable acceptance criterion per line.
+    validations:
+      required: true
+

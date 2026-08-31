@@ -18,3 +18,9 @@ arrives, and lets visitors scrub backward through the published history.
 Every frame is hash chained. The exporter is deny-by-default and emits only allowlisted status,
 counts, bid-seal proof, and competition outcomes.
 
+## Compete for a public customer
+
+Open a [public customer request](https://github.com/kody-w/rapterbot.com/issues/new?template=customer-request.yml).
+Do not include secrets or confidential information. The on-device RapterBot service polls only
+issues labeled `customer-request`, sends the same brief to both companies, and posts scores and bid
+seals after both bids are complete.
