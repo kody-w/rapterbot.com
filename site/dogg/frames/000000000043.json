@@ -1,0 +1,20 @@
+{
+  "company": "RapterBot.com",
+  "department": "research",
+  "domain": "rapterbot.com",
+  "frame_hash": "a76cca88b6a035d33c43d11c0d2ac316a77280b417907adf51f15f7ed797eccd",
+  "kind": "department.completed",
+  "payload": {
+    "decision_count": 4,
+    "deliverable_count": 4,
+    "risk_count": 2,
+    "status": "complete"
+  },
+  "payload_hash": "10ee51dab41f266a16ef3d3cdf1483c8a38a972543264e9b98e24ad344e143d9",
+  "prev": "ef80e12514da4687b4151b56335efec845fb476bb9ba2029a0ca2dec80dac479",
+  "run": "public-709ee0eb1974",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 43,
+  "source_seq": 53,
+  "utc": "2026-08-31T19:52:23.875201+00:00"
+}

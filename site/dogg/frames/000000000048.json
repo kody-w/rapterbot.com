@@ -1,0 +1,20 @@
+{
+  "company": "RapterBot.com",
+  "department": "security",
+  "domain": "rapterbot.com",
+  "frame_hash": "3d9d6fc968c4ab4b8481226444e5c31b98ba65b15ecb29ba838f7ea5efc41aaf",
+  "kind": "department.completed",
+  "payload": {
+    "decision_count": 5,
+    "deliverable_count": 5,
+    "risk_count": 2,
+    "status": "complete"
+  },
+  "payload_hash": "74f76d977821d376f5f912467051ad77ce777fc1597aa7a21213fa7e472b4032",
+  "prev": "6f9972368c22416f51506b427e1c2d4efe9667f8bb6a1a94d47414f1c56991f0",
+  "run": "public-709ee0eb1974",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 48,
+  "source_seq": 58,
+  "utc": "2026-08-31T19:52:23.892412+00:00"
+}

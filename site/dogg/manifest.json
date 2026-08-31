@@ -1,7 +1,7 @@
 {
   "company": "RapterBot.com",
   "domain": "rapterbot.com",
-  "frame_count": 41,
+  "frame_count": 53,
   "frames": [
     {
       "hash": "39ee8538bc7a2b77edd7b6d3a133f874dff01128c9b645b17a2fd272b31cd992",
@@ -289,20 +289,104 @@
       "path": "dogg/frames/000000000040.json",
       "seq": 40,
       "utc": "2026-08-31T19:41:17.196275+00:00"
+    },
+    {
+      "hash": "cb7c392975bbe3fc287a0a2ced31657aa4e4fcf2a2e81f85bba0aba2bb38cb29",
+      "kind": "request.accepted",
+      "path": "dogg/frames/000000000041.json",
+      "seq": 41,
+      "utc": "2026-08-31T19:52:23.743668+00:00"
+    },
+    {
+      "hash": "ef80e12514da4687b4151b56335efec845fb476bb9ba2029a0ca2dec80dac479",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000042.json",
+      "seq": 42,
+      "utc": "2026-08-31T19:52:23.871857+00:00"
+    },
+    {
+      "hash": "a76cca88b6a035d33c43d11c0d2ac316a77280b417907adf51f15f7ed797eccd",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000043.json",
+      "seq": 43,
+      "utc": "2026-08-31T19:52:23.875201+00:00"
+    },
+    {
+      "hash": "6aa3809cf993b5267fb78c935adad9e8680b38c25c76b48577bed914925aeb2a",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000044.json",
+      "seq": 44,
+      "utc": "2026-08-31T19:52:23.878371+00:00"
+    },
+    {
+      "hash": "1ab17bf0804b68682c90b40784aa3d44ff6a7748ca36943c4983c944ec42b452",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000045.json",
+      "seq": 45,
+      "utc": "2026-08-31T19:52:23.881757+00:00"
+    },
+    {
+      "hash": "fd14bd91860e80133847b70d292d3ea94536d983e7e448d3e86dc8a7b7a4ea75",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000046.json",
+      "seq": 46,
+      "utc": "2026-08-31T19:52:23.885454+00:00"
+    },
+    {
+      "hash": "6f9972368c22416f51506b427e1c2d4efe9667f8bb6a1a94d47414f1c56991f0",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000047.json",
+      "seq": 47,
+      "utc": "2026-08-31T19:52:23.889065+00:00"
+    },
+    {
+      "hash": "3d9d6fc968c4ab4b8481226444e5c31b98ba65b15ecb29ba838f7ea5efc41aaf",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000048.json",
+      "seq": 48,
+      "utc": "2026-08-31T19:52:23.892412+00:00"
+    },
+    {
+      "hash": "db52080252da2b33b18746ec456a6b76194885a46a0fc08d52f06d68ef0b3d53",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000049.json",
+      "seq": 49,
+      "utc": "2026-08-31T19:52:23.896677+00:00"
+    },
+    {
+      "hash": "07fd49a27184c7ccc22f808dc6c9787107284b726dbcb38842cbb9e8d068475b",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000050.json",
+      "seq": 50,
+      "utc": "2026-08-31T19:52:23.900656+00:00"
+    },
+    {
+      "hash": "933c1ce13cb4cf2b8cf636683bcb78c8c8d60a0f8ac1265e646947a8bde908a5",
+      "kind": "department.completed",
+      "path": "dogg/frames/000000000051.json",
+      "seq": 51,
+      "utc": "2026-08-31T19:52:23.904326+00:00"
+    },
+    {
+      "hash": "cf3a020f5612dfc3426537ad8b9f80d1245681010af85611a28343a7050314b1",
+      "kind": "proposal.sealed",
+      "path": "dogg/frames/000000000052.json",
+      "seq": 52,
+      "utc": "2026-08-31T19:52:23.987628+00:00"
     }
   ],
-  "head": "416c28aea6fc4ed01abbee070c395e53bfdb60d8c821b80aa9a9ab0d960067a5",
-  "latest": "dogg/frames/000000000040.json",
+  "head": "cf3a020f5612dfc3426537ad8b9f80d1245681010af85611a28343a7050314b1",
+  "latest": "dogg/frames/000000000052.json",
   "privacy": {
     "allowlist_only": true,
     "customer_content_exported": false,
     "private_ip_exported": false
   },
-  "private_checkpoint": "6ddb5778f67135725f770de9b9aef8fbe9c7c082b1e65f19f6684e73cde04761",
+  "private_checkpoint": "873045c7e5e90d263460c1f794736743e1ccb27da43c873cb023fb2aeef3e6ab",
   "rubric_hash": "4ea2e3360dc5dc1efff997dfc606e647af0b64bc3662ff166dbfa76b1c8c7016",
   "schema": "rapterbot-public-dogg-manifest/1",
-  "updated_at": "2026-08-31T19:41:17.196275+00:00",
-  "window_end": 40,
+  "updated_at": "2026-08-31T19:52:23.987628+00:00",
+  "window_end": 52,
   "window_prev": "0000000000000000000000000000000000000000000000000000000000000000",
   "window_start": 0
 }
