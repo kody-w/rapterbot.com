@@ -1,8 +1,8 @@
 {
-  "head": "0000000000000000000000000000000000000000000000000000000000000000",
+  "head": "d667425d6d0aad3a6f76a3c82cbfd9752e4a63a9a39e0a14c2c7b04789534772",
   "non_financial": true,
-  "remaining": 251,
-  "reserved": 0,
+  "remaining": 250,
+  "reserved": 1,
   "schema": "rapterbot-first-edition-public/1",
   "sold_out": false,
   "supply": 251,
