@@ -91,6 +91,7 @@
   let manifest = null;
   let frame = null;
   let verifiedFrames = [];
+  let annotations = {};
   let following = true;
   let polling = false;
   const canonical = (value, key = '') => {
@@ -136,7 +137,11 @@
     $('kind').textContent = frame.kind;
     $('department').textContent = frame.department || 'company';
     $('frame').textContent = JSON.stringify(frame.payload, null, 2);
-    $('status').textContent = (following ? 'LIVE - ' : 'HISTORY - ') + new Date(frame.utc).toLocaleString();
+    const annotation = annotations[String(frame.seq)];
+    const edge = following ? 'LIVE' : 'HISTORY';
+    $('status').textContent = annotation
+      ? annotation.status.toUpperCase() + ' - ' + annotation.message + ' - ' + new Date(frame.utc).toLocaleString()
+      : edge + ' - ' + new Date(frame.utc).toLocaleString();
   };
   const poll = async () => {
     if (polling) return;
@@ -148,6 +153,11 @@
       const editionResponse = await fetch('first-edition/status.json?t=' + Date.now(), {cache:'no-store'});
       if (!editionResponse.ok) throw new Error('Edition status HTTP ' + editionResponse.status);
       const edition = await editionResponse.json();
+      const annotationsResponse = await fetch('dogg/annotations.json?t=' + Date.now(), {cache:'no-store'});
+      if (!annotationsResponse.ok) throw new Error('Annotations HTTP ' + annotationsResponse.status);
+      const annotationDocument = await annotationsResponse.json();
+      if (annotationDocument.schema !== 'rapterbot-public-annotations/1') throw new Error('annotations schema');
+      annotations = annotationDocument.frames || {};
       $('remaining').textContent = edition.remaining;
       $('reserved').textContent = edition.reserved + ' reserved';
       if (manifest && next.head === manifest.head &&

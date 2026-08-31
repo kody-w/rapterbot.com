@@ -1,0 +1,13 @@
+{
+  "schema": "rapterbot-public-annotations/1",
+  "frames": {
+    "39": {
+      "status": "retracted",
+      "message": "Answer keys were present in contestant input. This benchmark does not count. See replacement frame 68."
+    },
+    "68": {
+      "status": "qualified",
+      "message": "Accuracy is comparable. Timing is deterministic RapterBot kernel execution versus Rapterbox end-to-end model execution, not a head-to-head speed claim."
+    }
+  }
+}
