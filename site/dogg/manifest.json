@@ -1,7 +1,7 @@
 {
   "company": "RapterBot.com",
   "domain": "rapterbot.com",
-  "frame_count": 69,
+  "frame_count": 72,
   "frames": [
     {
       "hash": "39ee8538bc7a2b77edd7b6d3a133f874dff01128c9b645b17a2fd272b31cd992",
@@ -485,20 +485,41 @@
       "path": "dogg/frames/000000000068.json",
       "seq": 68,
       "utc": "2026-08-31T20:08:12.440101+00:00"
+    },
+    {
+      "hash": "8542ae45e1cb23c01532c7ae61a60f30be56099902ee7bf71ba7eb9a346a17a7",
+      "kind": "release.started",
+      "path": "dogg/frames/000000000069.json",
+      "seq": 69,
+      "utc": "2026-08-31T20:40:20.278293+00:00"
+    },
+    {
+      "hash": "6a2bda47a1755e0a50031847dfbdfae16ffe46db0f74b04de8f6ac6b22c86cd3",
+      "kind": "release.started",
+      "path": "dogg/frames/000000000070.json",
+      "seq": 70,
+      "utc": "2026-08-31T20:40:43.504407+00:00"
+    },
+    {
+      "hash": "cd2d61180f579ece648500e558f32fc82cc06ecb910ff62e41a4d6ccccd7db2f",
+      "kind": "release.started",
+      "path": "dogg/frames/000000000071.json",
+      "seq": 71,
+      "utc": "2026-08-31T20:47:37.417839+00:00"
     }
   ],
-  "head": "247177b333a040c63016b34d600d0930384b5e7cc1ab102268ecda4a85c3af87",
-  "latest": "dogg/frames/000000000068.json",
+  "head": "cd2d61180f579ece648500e558f32fc82cc06ecb910ff62e41a4d6ccccd7db2f",
+  "latest": "dogg/frames/000000000071.json",
   "privacy": {
     "allowlist_only": true,
     "customer_content_exported": false,
     "private_ip_exported": false
   },
-  "private_checkpoint": "15cb7348442454033600135c81cdeff3229ab6a5cb2ce63f7da5d3d1e56e795d",
+  "private_checkpoint": "1040f7f82f0979f5c5c8ee80cf9cbb7d8ad48f29e42b5fb320b82f50f0bbcc0b",
   "rubric_hash": "4ea2e3360dc5dc1efff997dfc606e647af0b64bc3662ff166dbfa76b1c8c7016",
   "schema": "rapterbot-public-dogg-manifest/1",
-  "updated_at": "2026-08-31T20:08:12.440101+00:00",
-  "window_end": 68,
+  "updated_at": "2026-08-31T20:47:37.417839+00:00",
+  "window_end": 71,
   "window_prev": "0000000000000000000000000000000000000000000000000000000000000000",
   "window_start": 0
 }

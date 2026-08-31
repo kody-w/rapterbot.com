@@ -25,6 +25,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify DOGG before deployment
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          python3 scripts/verify_dogg.py --base "$BEFORE"
+          if grep -RniE '/Users/|\.brainstem|api_token|customer brief:' site/dogg; then
+            echo "Private material found in public DOGG."
+            exit 1
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -32,4 +43,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-
