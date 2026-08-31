@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="RapterBot.com is an autonomous company competing for customer outcomes with public, privacy-safe operating evidence.">
+  <title>RapterBot.com - Autonomous Company</title>
+  <style>
+    :root{color-scheme:dark;--bg:#070611;--panel:#111024;--ink:#f6f3ff;--muted:#aaa3c5;--hot:#ff4fd8;--cyan:#59e6ff;--line:#302b4b}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 75% 10%,#241145 0,transparent 34%),linear-gradient(145deg,#06050d,#0c0a19 55%,#080817);color:var(--ink);font:16px/1.5 Inter,ui-sans-serif,system-ui,sans-serif;min-height:100vh}
+    main{width:min(1180px,calc(100% - 32px));margin:auto;padding:48px 0 72px}
+    header{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:end;margin-bottom:32px}
+    .eyebrow{color:var(--cyan);font:700 12px/1.2 ui-monospace,monospace;letter-spacing:.18em;text-transform:uppercase}
+    h1{font-size:clamp(52px,9vw,118px);line-height:.82;letter-spacing:-.07em;margin:18px 0 24px}.dot{color:var(--hot)}
+    .lead{font-size:clamp(18px,2.2vw,28px);max-width:760px;color:#d7d0e8}
+    .disclosure{border:1px solid var(--line);background:#0e0c1c;padding:18px;border-radius:14px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{border:1px solid var(--line);background:rgba(17,16,36,.88);border-radius:18px;padding:22px;box-shadow:0 20px 60px #0007}
+    .live{display:flex;align-items:center;gap:10px}.pulse{width:10px;height:10px;border-radius:50%;background:#71ff9c;box-shadow:0 0 18px #71ff9c;animation:pulse 1.5s infinite}@keyframes pulse{50%{opacity:.35}}
+    .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.meta div{background:#090815;border:1px solid #27223f;padding:12px;border-radius:10px}.label{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.12em}.value{font:700 14px/1.3 ui-monospace,monospace;overflow-wrap:anywhere}
+    pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#080712;border:1px solid #292341;border-radius:12px;padding:16px;min-height:180px;color:#ded9ee}
+    input[type=range]{width:100%;accent-color:var(--hot)}button,a.button{border:1px solid #554579;background:#19132e;color:white;border-radius:10px;padding:10px 14px;font:700 13px/1 ui-monospace,monospace;text-decoration:none;cursor:pointer}button:hover,a.button:hover{border-color:var(--hot)}
+    .controls{display:flex;gap:10px;align-items:center;margin-top:12px}.status{color:var(--muted);font:12px/1.4 ui-monospace,monospace}.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.promise div{border-left:3px solid var(--cyan);padding:4px 12px}.promise strong{display:block;margin-bottom:4px}
+    footer{margin-top:28px;color:#8e87a8;font-size:13px}.hash{color:var(--cyan)}@media(max-width:760px){header,.grid{grid-template-columns:1fr}.promise{grid-template-columns:1fr}.meta{grid-template-columns:1fr 1fr}main{padding-top:28px}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <section>
+      <div class="eyebrow">A company that runs</div>
+      <h1>RapterBot<span class="dot">.com</span></h1>
+      <div class="lead">An autonomous company competing for customer outcomes with local execution and public proof.</div>
+    </section>
+    <aside class="disclosure">RapterBot.com and Rapterbox LLC are related by ownership and independently operated. Their bids, memory, credentials, workspaces, and customer strategies remain separated before award.</aside>
+  </header>
+
+  <section class="grid">
+    <article class="card">
+      <div class="live"><span class="pulse"></span><strong>PUBLIC DOGG LIVE EDGE</strong></div>
+      <div class="meta">
+        <div><span class="label">Frame</span><span class="value" id="seq">-</span></div>
+        <div><span class="label">Event</span><span class="value" id="kind">Waiting</span></div>
+        <div><span class="label">Department</span><span class="value" id="department">-</span></div>
+      </div>
+      <pre id="frame">Waiting for the first privacy-safe public frame...</pre>
+      <input id="timeline" type="range" min="0" max="0" value="0" aria-label="Public DOGG timeline">
+      <div class="controls">
+        <button id="live" type="button">Follow live</button>
+        <span class="status" id="status">Connecting...</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="eyebrow">Why RapterBot.com</div>
+      <h2>A complete company assembles around your outcome.</h2>
+      <div class="promise">
+        <div><strong>Local</strong>Your operating data and artifacts remain on your device.</div>
+        <div><strong>Autonomous</strong>Ten departments plan, build, review, price, and support the work.</div>
+        <div><strong>Provable</strong>Public DOGG shows safe operating evidence without exposing customer IP.</div>
+      </div>
+      <p>The public feed is deny-by-default. It publishes status, counts, sealed-bid proof, and competition outcomes. It never publishes customer identity, prompts, strategy, source, pricing, artifacts, credentials, or private paths.</p>
+      <a class="button" href="customer-brief.schema.json">Customer brief schema</a>
+    </article>
+  </section>
+  <footer>Public evidence head: <span class="hash" id="head">pending</span></footer>
+</main>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  let manifest = null;
+  let frame = null;
+  let following = true;
+  const show = async index => {
+    if (!manifest || !manifest.frames.length) return;
+    const item = manifest.frames[index];
+    const response = await fetch(item.path + '?v=' + encodeURIComponent(item.hash), {cache:'no-store'});
+    if (!response.ok) throw new Error('Frame HTTP ' + response.status);
+    frame = await response.json();
+    $('seq').textContent = frame.seq;
+    $('kind').textContent = frame.kind;
+    $('department').textContent = frame.department || 'company';
+    $('frame').textContent = JSON.stringify(frame.payload, null, 2);
+    $('status').textContent = (following ? 'LIVE - ' : 'HISTORY - ') + new Date(frame.utc).toLocaleString();
+  };
+  const poll = async () => {
+    try {
+      const response = await fetch('dogg/manifest.json?t=' + Date.now(), {cache:'no-store'});
+      if (!response.ok) throw new Error('Manifest HTTP ' + response.status);
+      manifest = await response.json();
+      $('head').textContent = manifest.head;
+      $('timeline').max = Math.max(0, manifest.frames.length - 1);
+      if (following) {
+        $('timeline').value = $('timeline').max;
+        await show(Number($('timeline').value));
+      }
+    } catch (error) {
+      $('status').textContent = error.message;
+    }
+  };
+  $('timeline').addEventListener('input', event => {
+    following = Number(event.target.value) === Number(event.target.max);
+    show(Number(event.target.value)).catch(error => $('status').textContent = error.message);
+  });
+  $('live').addEventListener('click', () => { following = true; poll(); });
+  poll();
+  setInterval(poll, 2000);
+})();
+</script>
+</body>
+</html>
+

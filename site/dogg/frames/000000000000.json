@@ -1,0 +1,18 @@
+{
+  "company": "RapterBot.com",
+  "department": "",
+  "domain": "rapterbot.com",
+  "frame_hash": "39ee8538bc7a2b77edd7b6d3a133f874dff01128c9b645b17a2fd272b31cd992",
+  "kind": "company.online",
+  "payload": {
+    "domain": "rapterbot.com",
+    "product": "RapterBot Autonomous Company",
+    "status": "online"
+  },
+  "payload_hash": "5b344faecab1559aed3658d36441babb7dd10f035bb0a3bb3a9772dff04b01d7",
+  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+  "run": "",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 0,
+  "utc": "2026-08-31T18:42:09.696428+00:00"
+}

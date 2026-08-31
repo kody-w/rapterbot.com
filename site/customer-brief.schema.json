@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "acceptance_criteria": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "budget_usd": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "customer": {
+      "maxLength": 300,
+      "type": "string"
+    },
+    "deadline_days": {
+      "maximum": 3650,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "priorities": {
+      "type": "object"
+    },
+    "problem": {
+      "maxLength": 20000,
+      "type": "string"
+    },
+    "required_capabilities": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "title": {
+      "maxLength": 300,
+      "type": "string"
+    }
+  },
+  "required": [
+    "customer",
+    "title",
+    "problem",
+    "deadline_days"
+  ],
+  "title": "RapterBot.com customer brief",
+  "type": "object"
+}
