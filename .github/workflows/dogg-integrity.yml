@@ -1,0 +1,31 @@
+name: Verify public DOGG
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify-public-dogg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify chain and append-only history
+        env:
+          BEFORE: ${{ github.event.before }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          BASE="${PR_BASE:-$BEFORE}"
+          python3 scripts/verify_dogg.py --base "$BASE"
+      - name: Reject obvious private paths and credentials
+        run: |
+          if grep -RniE '/Users/|\.brainstem|api_token|customer brief:' site/dogg; then
+            echo "Private material found in public DOGG."
+            exit 1
+          fi

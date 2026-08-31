@@ -1,0 +1,11 @@
+{
+  "head": "0000000000000000000000000000000000000000000000000000000000000000",
+  "non_financial": true,
+  "records": [],
+  "remaining": 251,
+  "reserved": 0,
+  "schema": "rapterbot-first-edition-public/1",
+  "sold_out": false,
+  "supply": 251,
+  "transferable": false
+}

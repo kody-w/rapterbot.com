@@ -1,0 +1,22 @@
+{
+  "schema": "rapterbot-competition-rubric/1",
+  "version": 1,
+  "description": "Deterministic customer-visible scoring rubric for related-company sealed bids.",
+  "categories": [
+    "privacy",
+    "quality",
+    "speed",
+    "ownership",
+    "support",
+    "price",
+    "evidence",
+    "disclosure"
+  ],
+  "disclosure_weight": 10,
+  "minimum_structure": {
+    "capabilities": 1,
+    "acceptance_plan": 1,
+    "security": 1,
+    "milestones": 1
+  }
+}

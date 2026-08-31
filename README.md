@@ -24,3 +24,10 @@ Open a [public customer request](https://github.com/kody-w/rapterbot.com/issues/
 Do not include secrets or confidential information. The on-device RapterBot service polls only
 issues labeled `customer-request`, sends the same brief to both companies, and posts scores and bid
 seals after both bids are complete.
+
+## First Edition
+
+Exactly 251 First Edition RapterBots may be reserved through the public
+[First Edition form](https://github.com/kody-w/rapterbot.com/issues/new?template=first-edition.yml).
+Reservations receive sequential cryptographic receipts and create no coin, token, equity,
+investment, transfer, resale, or appreciation rights.

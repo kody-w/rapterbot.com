@@ -1,8 +1,13 @@
 {
-  "frame_count": 39,
-  "head": "943149651e00c2a7e8128901a95de5192090f5c58b818eeee5789d35b4bd518c",
+  "exporter_version": "0.1.0",
+  "frame_count": 40,
+  "head": "4fcd84ae12204632445940a6e29b315392110e84afc9b7b5a82a03c79085afb2",
   "name": "RapterBot.com Public DOGG",
+  "private_checkpoint": "e98bbbfea3abca0350859508409a26451ad54371649f3b5fbbb81fbe027bb1f4",
+  "private_seq": 49,
   "private_source_included": false,
+  "rubric_sha256": "4ea2e3360dc5dc1efff997dfc606e647af0b64bc3662ff166dbfa76b1c8c7016",
   "schema": "rapterbot-public-dogg/1",
-  "updated_at": "2026-08-31T18:58:43.749890+00:00"
+  "template_sha256": "04f9e2d1e05351efb0cbfc0f8738f846e21ab7cac53dfd3b10b409ed345b8362",
+  "updated_at": "2026-08-31T19:35:01.124477+00:00"
 }

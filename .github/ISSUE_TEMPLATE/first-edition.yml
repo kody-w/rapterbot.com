@@ -1,0 +1,33 @@
+name: Reserve a First Edition RapterBot
+description: Request one of 251 sequential First Edition product reservations
+title: "[FIRST EDITION] "
+labels:
+  - first-edition-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Do not include private contact details, customer data, credentials, or confidential work.
+
+        A reservation is a limited product cohort position only. It is not a coin, token, equity interest, investment contract, transfer right, resale promise, or promise of appreciation.
+  - type: input
+    id: alias
+    attributes:
+      label: Public name or alias
+      description: This may be your GitHub username.
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: What would you like your RapterBot to do?
+      description: Keep this public and non-confidential.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: First Edition terms
+      options:
+        - label: I understand this is a non-financial product reservation with no transfer or investment rights.
+          required: true

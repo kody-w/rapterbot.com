@@ -20,7 +20,8 @@
     pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#080712;border:1px solid #292341;border-radius:12px;padding:16px;min-height:180px;color:#ded9ee}
     input[type=range]{width:100%;accent-color:var(--hot)}button,a.button{border:1px solid #554579;background:#19132e;color:white;border-radius:10px;padding:10px 14px;font:700 13px/1 ui-monospace,monospace;text-decoration:none;cursor:pointer}button:hover,a.button:hover{border-color:var(--hot)}
     .controls{display:flex;gap:10px;align-items:center;margin-top:12px}.status{color:var(--muted);font:12px/1.4 ui-monospace,monospace}.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.promise div{border-left:3px solid var(--cyan);padding:4px 12px}.promise strong{display:block;margin-bottom:4px}
-    footer{margin-top:28px;color:#8e87a8;font-size:13px}.hash{color:var(--cyan);overflow-wrap:anywhere;word-break:break-all}@media(max-width:760px){header,.grid{grid-template-columns:1fr}.promise{grid-template-columns:1fr}.meta{grid-template-columns:1fr 1fr}main{padding-top:28px}}
+    .edition{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.edition-count{font-size:clamp(52px,9vw,104px);line-height:.8;color:var(--hot);font-weight:800;letter-spacing:-.06em}.edition-actions{display:flex;gap:10px;flex-wrap:wrap}
+    footer{margin-top:28px;color:#8e87a8;font-size:13px}.hash{color:var(--cyan);overflow-wrap:anywhere;word-break:break-all}@media(max-width:760px){header,.grid{grid-template-columns:1fr}.promise{grid-template-columns:1fr}.meta{grid-template-columns:1fr 1fr}.edition{grid-template-columns:1fr}main{padding-top:28px}}
   </style>
 </head>
 <body>
@@ -35,6 +36,24 @@
   </header>
 
   <section class="grid">
+    <article class="card edition">
+      <div>
+        <div class="eyebrow">First Edition registry</div>
+        <h2>Only 251 First Edition RapterBots.</h2>
+        <p>Fixed product cohort, sequential cryptographic receipts, no token, no equity, no transfer, and no investment claim.</p>
+        <div class="edition-actions">
+          <a class="button" href="https://github.com/kody-w/rapterbot.com/issues/new?template=first-edition.yml">Reserve a First Edition</a>
+          <a class="button" href="first-edition/terms.html">Read the terms</a>
+          <a class="button" href="first-edition/registry.json">Verify the registry</a>
+        </div>
+      </div>
+      <div>
+        <div class="edition-count" id="remaining">251</div>
+        <span class="label">remaining globally</span>
+        <span class="status" id="reserved">0 reserved</span>
+      </div>
+    </article>
+
     <article class="card">
       <div class="live"><span class="pulse"></span><strong>PUBLIC DOGG LIVE EDGE</strong></div>
       <div class="meta">
@@ -61,6 +80,7 @@
       <p>The public feed is deny-by-default. It publishes status, counts, sealed-bid proof, and competition outcomes. It never publishes customer identity, prompts, strategy, source, pricing, artifacts, credentials, or private paths.</p>
       <a class="button" href="https://github.com/kody-w/rapterbot.com/issues/new?template=customer-request.yml">Submit a public customer request</a>
       <a class="button" href="customer-brief.schema.json">Customer brief schema</a>
+      <a class="button" href="competition-rubric.json">Competition rubric</a>
     </article>
   </section>
   <footer>Public evidence head: <span class="hash" id="head">pending</span></footer>
@@ -70,13 +90,48 @@
   const $ = id => document.getElementById(id);
   let manifest = null;
   let frame = null;
+  let verifiedFrames = [];
   let following = true;
+  let polling = false;
+  const canonical = (value, key = '') => {
+    if (typeof value === 'number' && Number.isInteger(value) &&
+        /(_score|_ms)$/.test(key)) return value.toFixed(1);
+    if (value === null || typeof value !== 'object') return JSON.stringify(value);
+    if (Array.isArray(value)) return '[' + value.map(item => canonical(item)).join(',') + ']';
+    return '{' + Object.keys(value).sort().map(name => JSON.stringify(name) + ':' + canonical(value[name], name)).join(',') + '}';
+  };
+  const sha256 = async value => {
+    const bytes = new TextEncoder().encode(value);
+    const digest = await crypto.subtle.digest('SHA-256', bytes);
+    return [...new Uint8Array(digest)].map(byte => byte.toString(16).padStart(2, '0')).join('');
+  };
+  const verifyFrame = async (value, item, previous) => {
+    if (value.schema !== 'rapterbot-public-dogg/1') throw new Error('frame schema');
+    if (value.seq !== item.seq) throw new Error('frame sequence');
+    if (value.prev !== previous) throw new Error('frame parent');
+    if (await sha256(canonical(value.payload)) !== value.payload_hash) throw new Error('payload hash');
+    const material = {...value};
+    delete material.frame_hash;
+    if (await sha256(canonical(material)) !== value.frame_hash) throw new Error('frame hash');
+    if (value.frame_hash !== item.hash) throw new Error('manifest frame hash');
+    return value;
+  };
+  const loadVerifiedFrames = async value => {
+    const output = [];
+    let previous = value.window_prev;
+    for (const item of value.frames) {
+      const response = await fetch(item.path + '?v=' + encodeURIComponent(item.hash), {cache:'no-store'});
+      if (!response.ok) throw new Error('Frame HTTP ' + response.status);
+      const checked = await verifyFrame(await response.json(), item, previous);
+      output.push(checked);
+      previous = checked.frame_hash;
+    }
+    if (output.length && previous !== value.head) throw new Error('manifest head');
+    return output;
+  };
   const show = async index => {
-    if (!manifest || !manifest.frames.length) return;
-    const item = manifest.frames[index];
-    const response = await fetch(item.path + '?v=' + encodeURIComponent(item.hash), {cache:'no-store'});
-    if (!response.ok) throw new Error('Frame HTTP ' + response.status);
-    frame = await response.json();
+    if (!manifest || !verifiedFrames.length) return;
+    frame = verifiedFrames[index];
     $('seq').textContent = frame.seq;
     $('kind').textContent = frame.kind;
     $('department').textContent = frame.department || 'company';
@@ -84,10 +139,29 @@
     $('status').textContent = (following ? 'LIVE - ' : 'HISTORY - ') + new Date(frame.utc).toLocaleString();
   };
   const poll = async () => {
+    if (polling) return;
+    polling = true;
     try {
       const response = await fetch('dogg/manifest.json?t=' + Date.now(), {cache:'no-store'});
       if (!response.ok) throw new Error('Manifest HTTP ' + response.status);
-      manifest = await response.json();
+      const next = await response.json();
+      const editionResponse = await fetch('first-edition/status.json?t=' + Date.now(), {cache:'no-store'});
+      if (!editionResponse.ok) throw new Error('Edition status HTTP ' + editionResponse.status);
+      const edition = await editionResponse.json();
+      $('remaining').textContent = edition.remaining;
+      $('reserved').textContent = edition.reserved + ' reserved';
+      if (manifest && next.head === manifest.head &&
+          next.frames.length === verifiedFrames.length) {
+        manifest = next;
+        if (following && verifiedFrames.length) {
+          $('timeline').value = String(verifiedFrames.length - 1);
+          await show(verifiedFrames.length - 1);
+        }
+        return;
+      }
+      const checked = await loadVerifiedFrames(next);
+      manifest = next;
+      verifiedFrames = checked;
       $('head').textContent = manifest.head;
       $('timeline').max = Math.max(0, manifest.frames.length - 1);
       if (following) {
@@ -95,7 +169,9 @@
         await show(Number($('timeline').value));
       }
     } catch (error) {
-      $('status').textContent = error.message;
+      $('status').textContent = 'DOGG REFUSED: ' + error.message;
+    } finally {
+      polling = false;
     }
   };
   $('timeline').addEventListener('input', event => {
