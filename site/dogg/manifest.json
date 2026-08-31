@@ -1,7 +1,7 @@
 {
   "company": "RapterBot.com",
   "domain": "rapterbot.com",
-  "frame_count": 88,
+  "frame_count": 89,
   "frames": [
     {
       "hash": "39ee8538bc7a2b77edd7b6d3a133f874dff01128c9b645b17a2fd272b31cd992",
@@ -618,20 +618,27 @@
       "path": "dogg/frames/000000000087.json",
       "seq": 87,
       "utc": "2026-08-31T22:02:56.305981+00:00"
+    },
+    {
+      "hash": "38f2ec1e69e329d39d30976026168a5dc449a432aaf24ab61a180ed62d07db44",
+      "kind": "release.started",
+      "path": "dogg/frames/000000000088.json",
+      "seq": 88,
+      "utc": "2026-08-31T22:12:24.268668+00:00"
     }
   ],
-  "head": "a34b6a5c15c84719dbd14101bb6adec7dc5617132feef4b9e54b7f7ae575bda0",
-  "latest": "dogg/frames/000000000087.json",
+  "head": "38f2ec1e69e329d39d30976026168a5dc449a432aaf24ab61a180ed62d07db44",
+  "latest": "dogg/frames/000000000088.json",
   "privacy": {
     "allowlist_only": true,
     "customer_content_exported": false,
     "private_ip_exported": false
   },
-  "private_checkpoint": "f7043972581157b2ed0ad718448eaf61afcb3e0eb8414a6ff6a147125e2c21c3",
+  "private_checkpoint": "0dafc5b2d6a5fa90becbe235fb1f3315bfb037703f1d6f687f9a42b4cd79abb2",
   "rubric_hash": "4ea2e3360dc5dc1efff997dfc606e647af0b64bc3662ff166dbfa76b1c8c7016",
   "schema": "rapterbot-public-dogg-manifest/1",
-  "updated_at": "2026-08-31T22:02:56.305981+00:00",
-  "window_end": 87,
+  "updated_at": "2026-08-31T22:12:24.268668+00:00",
+  "window_end": 88,
   "window_prev": "0000000000000000000000000000000000000000000000000000000000000000",
   "window_start": 0
 }
