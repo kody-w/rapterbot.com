@@ -1,16 +1,16 @@
 {
   "exporter_version": "0.1.0",
-  "frame_count": 97,
-  "head": "c859c8960189a6b35333f4ffe70047d1fb22c148f7a1b1f2506772560a3c6e0e",
+  "frame_count": 98,
+  "head": "03159dd2524c11aea0d658e4802d08db716d3c3e77421515d49a583897e00996",
   "name": "RapterBot.com Public DOGG",
-  "private_checkpoint": "d428eb99c3058601fb921f0ec7ce716b4ac25c22f5427b1b681c21620bdd3c5d",
+  "private_checkpoint": "6d182fb6df9028795f5eaf68191a415650006e708fe2fa4defdaedaf26872ade",
   "private_release_commit": "9d9741044d7a0e9b7cac10877b4a1c67d4f267d0",
   "private_release_manifest": "063a8e8545cd7a645071079bd8f77a115f312818042085208e4f96b9ecc6e6c6",
   "private_release_tree": "82592890504ec27a0fa50e3328f1d7b958786d9c",
-  "private_seq": 120,
+  "private_seq": 121,
   "private_source_included": false,
   "rubric_sha256": "4ea2e3360dc5dc1efff997dfc606e647af0b64bc3662ff166dbfa76b1c8c7016",
   "schema": "rapterbot-public-dogg/1",
   "template_sha256": "e3fbfa9bfbc2ea2b0e5179daf2a0e06b45eecdd8062590ad9358b5b52d022519",
-  "updated_at": "2026-09-20T13:34:42.835957+00:00"
+  "updated_at": "2026-09-20T14:17:55.869169+00:00"
 }
