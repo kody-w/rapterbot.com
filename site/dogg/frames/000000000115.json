@@ -1,0 +1,20 @@
+{
+  "company": "RapterBot.com",
+  "department": "executive",
+  "domain": "rapterbot.com",
+  "frame_hash": "e50a4c5098618e0ea757bada9f58a3fb0bf0bf0cc2ded0298e1aa18db3fcde01",
+  "kind": "release.started",
+  "payload": {
+    "source_commit": "9d9741044d7a0e9b7cac10877b4a1c67d4f267d0",
+    "source_manifest": "063a8e8545cd7a645071079bd8f77a115f312818042085208e4f96b9ecc6e6c6",
+    "source_tree": "82592890504ec27a0fa50e3328f1d7b958786d9c",
+    "status": "running"
+  },
+  "payload_hash": "48225cbf60bd93c8c3e02ab7a588e6c75132abd0f0e9f983338b54628c79b7f0",
+  "prev": "d2049152286345aae0333fd253742fd6e0b38cf5596523b2200b9fc71a30c0c5",
+  "run": "",
+  "schema": "rapterbot-public-dogg/1",
+  "seq": 115,
+  "source_seq": 139,
+  "utc": "2026-11-21T14:38:44.018689+00:00"
+}
